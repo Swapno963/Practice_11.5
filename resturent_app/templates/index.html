@@ -1,0 +1,16 @@
+{% extends "base.html"  %}
+
+{% block content %}
+    {% for i in data %}
+     <div class='col-md-4 p-2'> 
+        <div class="card p-3" >
+            <img src={{i.strMealThumb}} class="card-img-top p-3 rounded" alt="This is image">
+            <div class="card-body">
+              <h5 class="card-title">{{i.idMeal}}</h5>
+              <p class="card-text">{{i.strMeal}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor%}
+{% endblock%}
+
